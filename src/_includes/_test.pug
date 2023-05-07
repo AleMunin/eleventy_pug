@@ -1,0 +1,14 @@
+extends base.pug
+
+block test_call 
+    h1 I HAVE BEEN SUMMONED
+
+block post_link 
+    ul
+        each post of collections.posts
+            li.post_title= post.data.title
+
+block page_link 
+    ul 
+        each page in collections.pages 
+            li.page_title= page.data.title
