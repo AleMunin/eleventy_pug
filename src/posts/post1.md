@@ -1,7 +1,7 @@
 ---
-id: "post-1"
-title: "This is Post 1"
-excerpt: "this is data post 1"
+id: post-1
+title: This is Post 1
+excerpt: this is data post 1
 public: true
 ---
 

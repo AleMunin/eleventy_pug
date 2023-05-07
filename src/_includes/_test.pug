@@ -1,14 +1,36 @@
 extends base.pug
 
+
+block the_content 
+
+    h3 index.md begins #{'{'}
+
+    !=content
+
+
+    h3 index.md ends  #{'}'}
+
+
+//---------------------------------------
+
+
 block test_call 
     h1 I HAVE BEEN SUMMONED
+    p If you delete the call on base.pug, you need to delete it in _test.pug too.
 
 block post_link 
+
+    h2 This is a loop of the posts collection, with links
+
     ul
         each post of collections.posts
-            li.post_title= post.data.title
+            li.post_title
+                a(href=post.url)= post.data.title
 
 block page_link 
+
+    h2 This is a loop of the pages collection
+
     ul 
         each page in collections.pages 
             li.page_title= page.data.title

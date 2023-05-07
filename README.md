@@ -41,4 +41,11 @@ The link has a tutorial on how to implement this on eleventy, but the configurat
 
 The Bulma folder will be for now empty, but if I happen to add there, I'll write here how to remove any dependencies or just branch it.
 
+# Friendly suggestions
+
+This was made using [Dark Reader](https://darkreader.org), available on most browsers.
+
+As someone with sensitive eyes I cannot imagine the world of pain someone might have checking a pure white page (or a pure black, for that matter), in case you have the same problems as me, I suggest installing before accessing localhost:8080
+
+
 
