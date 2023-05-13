@@ -47,5 +47,16 @@ This was made using [Dark Reader](https://darkreader.org), available on most bro
 
 As someone with sensitive eyes I cannot imagine the world of pain someone might have checking a pure white page (or a pure black, for that matter), in case you have the same problems as me, I suggest installing before accessing localhost:8080
 
+If you haven't already, Eleventy has a [base blog based on njk](https://github.com/11ty/eleventy-base-blog). 
+
+
+# Read/watch Recommendation
+
+In progress:
+
+https://desmondrivet.com/2022/03/23/eleventy-pagination
+https://youtu.be/Dppske2A-2U
+https://shivjm.blog/colophon/how-i-create-an-article-series-in-eleventy/
+
 
 

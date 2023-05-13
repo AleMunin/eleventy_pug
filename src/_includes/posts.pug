@@ -1,0 +1,30 @@
+---
+pagination:
+  data: collections.posts
+  size: 1
+  alias: list_posts
+---
+
+extends clean_base.pug
+
+block content 
+
+  h1 THIS IS POSTS PAGE CONTENT 
+
+  if pagination.previous
+    a(href=pagination.previousPageHref) Previous
+  p ..........
+
+  ul
+    - var n = 0;
+    each pageNumber in pagination.pages 
+      li
+        a(href=pagination.hrefs[n++]) #{ n }
+        
+  
+  p ..........
+  if pagination.next 
+    a(href=pagination.nextPageHref) Next
+
+
+    

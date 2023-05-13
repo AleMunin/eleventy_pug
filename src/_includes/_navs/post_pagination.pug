@@ -1,0 +1,12 @@
+---
+|
+pagination:
+  data: collections.posts
+  size: 2
+permalink: "| /posts/#{pagination.pageNumber}/"
+---
+
+block posting_pag
+    ul
+        each item of pagination.items
+                    li item

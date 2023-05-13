@@ -2,6 +2,9 @@
 title:  Markdown
 layout: _test.pug
 date: 2023-05-07
+id: post-markdown
+public: true
+excerpt: this is data for markdown
 ---
 
 # This should be a header beginning content 
@@ -35,6 +38,15 @@ Notice that eleventy formats the naming as a class for your convenience
         <p> Tags are automatically escaped here </p>
     </article>
 ```
+## Lists
+
+1. Numerical lists don't naturaly break into sublists
+2. It is unfortunate.
+
+- You can perform those lists too
+- Item 2
+
+
 
 ---
 

@@ -12,7 +12,7 @@ block the_content
 
 
 //---------------------------------------
-
+    // Remember that only blocks can appear on the top level
 
 block test_call 
     h1 I HAVE BEEN SUMMONED
@@ -34,3 +34,5 @@ block page_link
     ul 
         each page in collections.pages 
             li.page_title= page.data.title
+
+//-----------

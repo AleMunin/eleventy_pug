@@ -1,5 +1,6 @@
 ---
 title: Collection page
+layout: posts.pug
 ---
 
 # This is a page for the collection.
