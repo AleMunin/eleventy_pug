@@ -52,15 +52,21 @@ If you haven't already, Eleventy has a [base blog based on njk](https://github.c
 
 # A special Thanks
 
-The folks on the 11ty official Discord are incredibly patient and useful, I'm extremely grateful.
+The folks on the 11ty official Discord are incredibly patient and useful, I'm extremely grateful. Especially to Aankhen.
+11ty rocks was the one that introduced me to this wonderful world.
 
 # Read/watch Recommendation
-
-In progress:
 
 https://desmondrivet.com/2022/03/23/eleventy-pagination
 https://youtu.be/Dppske2A-2U
 https://shivjm.blog/colophon/how-i-create-an-article-series-in-eleventy/
+https://11ty.rocks
 
+# To Do List
 
+- Introduce metadata filters to pug template
+- Introduce RSS feed.
+- Quality of life Mixins for navigation
+- Maybe set up multi-language, might save it for a fork.
+- Add class-slug example https://11ty.rocks/tips/layout-templating/
 

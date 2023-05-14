@@ -1,0 +1,49 @@
+<html><head> <title>Collection page</title></head><body>        <section><section><h1>This is a page for the collection.</h1>
+<p>Note that the content remains while the pagination will change bellow.</p>
+<h2>Content Removal</h2>
+<p>If you don't want its content (written in 'posts.pug'), just remove the content block. The file it extends will not crash.</p>
+<h2>Types of Usage</h2>
+<p>This kind of page is useful to make paginations, summaries, and anything related to properly hosting the other pages within a collection.</p>
+<p>All you need to do is give the same name for the markdown file as the collection.</p>
+<hr>
+<p>You might also want to preferably use another layout on the template, so you can loop through this collection or overall set them apart.</p>
+<hr>
+<p>This page WILL show up o the collection loops if not made some kind of exception.</p>
+</section></section><article><h2>Markdown</h2><p>2023-05-07</p><h1>This should be a header beginning content</h1>
+<p>This is a paragraph inside the markdown file</p>
+<p><em>this should be italic</em></p>
+<p><strong>this should be bold</strong></p>
+<p>This should be <em><strong>bold and italic</strong></em></p>
+<p><s>this should be risked</s></p>
+<blockquote>
+<p>this should be a quote</p>
+</blockquote>
+<p>This parageaph <a href="https://www.11ty.dev">Has a link</a></p>
+<p>This is a link for a <a href="../post1">page in the same collection</a></p>
+<p>This is a link for a <a href="../../pages/page_a">page in a parallel collection</a></p>
+<p>This is a <code>single section of code</code> written within a paragraph.</p>
+<pre><code class="language-html">This is a block of code.
+
+Notice that eleventy formats the naming as a class for your convenience
+    &lt;article&gt;
+        &lt;p&gt; Tags are automatically escaped here &lt;/p&gt;
+    &lt;/article&gt;
+</code></pre>
+<h2>Lists</h2>
+<ol>
+<li>Numerical lists don't naturaly break into sublists</li>
+<li>It is unfortunate.</li>
+</ol>
+<ul>
+<li>You can perform those lists too</li>
+<li>Item 2</li>
+</ul>
+<hr>
+<h1>Header 1</h1>
+<h2>Header 2</h2>
+<h3>Header 3 <em>with italic</em></h3>
+<h4>Header 4 <s>risked</s></h4>
+<h5>Header 5 <strong>bold</strong></h5>
+<h6><a href="https://www.11ty.dev">Header 6</a></h6>
+<h1>This header ends content</h1>
+</article><h1>Testing pagination </h1><nav><a class="this_class_is_optional" href="/posts/1/">Previous </a><p>..........</p><ul><li><a href="/posts/">1</a></li><li><a href="/posts/1/">2</a></li><li><a href="/posts/2/">3</a></li></ul><p>..........</p></nav></body></html>

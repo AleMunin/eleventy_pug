@@ -65,6 +65,12 @@ module.exports = function (eleventyConfig) {
 	};
 
 
+	// -------------- 11ty must know things changed in those folders -------------- \\ 
+
+
+	eleventyConfig.addWatchTarget("src/assets/");
+	//eleventyConfig.addWatchTarget("src/css/"); // this is commented because 11ty-sass should be doing that already (i think)
+	eleventyConfig.addWatchTarget("src/js/");
 
 };
 
