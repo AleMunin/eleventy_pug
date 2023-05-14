@@ -7,4 +7,8 @@ public: true
 
 # This should be a header
 
-This is a post blog.
+Frontmatter pagination basically creates an object extracting from a collection.
+
+Here are the attributes such object carries:
+
+- Work in Progress =/

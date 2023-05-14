@@ -50,6 +50,10 @@ As someone with sensitive eyes I cannot imagine the world of pain someone might 
 If you haven't already, Eleventy has a [base blog based on njk](https://github.com/11ty/eleventy-base-blog). 
 
 
+# A special Thanks
+
+The folks on the 11ty official Discord are incredibly patient and useful, I'm extremely grateful.
+
 # Read/watch Recommendation
 
 In progress:

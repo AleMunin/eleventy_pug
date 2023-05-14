@@ -4,27 +4,27 @@ pagination:
   size: 1
   alias: list_posts
 ---
-
 extends clean_base.pug
 
-block content 
+block the_content
+  section
+    !=content
 
-  h1 THIS IS POSTS PAGE CONTENT 
+block pagination 
+  include ../_mixins/pagination_mixin
+  nav
+    +pag_previous('Previous')(class='this_class_is_optional')
+    p ..........
 
-  if pagination.previous
-    a(href=pagination.previousPageHref) Previous
-  p ..........
-
-  ul
-    - var n = 0;
-    each pageNumber in pagination.pages 
-      li
-        a(href=pagination.hrefs[n++]) #{ n }
-        
-  
-  p ..........
-  if pagination.next 
-    a(href=pagination.nextPageHref) Next
-
-
+    +pag_numbers
     
+    p ..........
+    
+    +pag_next("Next")
+
+block collection_content
+  each post in pagination.items
+      article
+        h2= post.data.title
+        p= post.date.toISOString().slice(0,10)
+        != post.templateContent

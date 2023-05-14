@@ -1,0 +1,30 @@
+//-
+    You can find an example of this in posts.pug
+    Note: Those functions will naturally inherit "pagination" as an object.
+    All you need to do is include this file within the same layout with pagination on the front matter.
+    In case you name your pagination anything else, I suggest CTRL+F and replace the term "pagination"
+    
+
+
+mixin pag_numbers(ul_class = '',li_class='')
+
+    //- Inherits pagination; Loops a a print of links with page numbers
+    //- Use both classes as an argument.
+    - var pg_n = 0;
+    ul(class=ul_class)
+        each pageNumber in pagination.pages 
+            li(class=li_class)
+                a(href=pagination.hrefs[pg_n++]) #{ pg_n }
+
+//- The following two are a simple next/previous posts.
+//- You don't need to write anything for their classes, but if you do, open a second () after calling the mixin
+
+mixin pag_previous(prev_text)
+    if pagination.previous
+        a(href=pagination.previousPageHref)&attributes(attributes) #{ prev_text } 
+
+mixin pag_next(next_text)
+    if pagination.next 
+        a(href=pagination.nextPageHref)&attributes(attributes) #{ next_text }
+
+
