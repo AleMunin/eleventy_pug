@@ -11,6 +11,12 @@
 
 <body>
 
+    {%include "_navs/base_nav.njk" %}
+    {% block main_nav %} {% endblock %}
+
     <h1> {{ content | safe }}</h1>
+
+    {%include "_foot/footer.njk"%}
+    {% block footer %} {% endblock %}
 
 </body>
