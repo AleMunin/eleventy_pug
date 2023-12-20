@@ -1,7 +1,7 @@
 ---
 title: The test
-base: base.njk
+layout: base.njk
 ---
 
 
-Testiiiiing
+Testiiiiing this
