@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">      <!-- Apparently a need with bulma-->
+
+
+
+
+    <!-- Favicon Stuff, thanks to favicon.io -->
+
+  
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!-- Robots Stuff -->
+
+    <meta name="robots" content="all">  <!-- Just sounds like the simplest thing to do if you are desperate to recover SEO points-->
+    <meta name="revised" content="Sunday, July 23th, 2022, 5:15 pm"> <!-- maybe this will indicate it isn't broken anymore-->
+
+
+    <!-- Social Media metadata -->
+    <meta name="twitter:site" content="@wizarducks1" />
+
+
+      <!-- HTML Meta Tags -->
+  <title>Wizarducks Puzzles</title>
+  <meta name="description" content="A cute and funny Indie Game!  Demo for PC, Linux, Raspberry Pi.">
+
+  <!-- Facebook Meta Tags -->
+  <meta property="og:url" content="https://wizarducks.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Wizarducks Puzzles">
+  <meta property="og:description" content="A cute and funny Indie Game!  Demo for PC, Linux, Raspberry Pi.">
+  <meta property="og:image" content="https://wizarducks.com/img/opengraph_PIC.webp">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="twitter:domain" content="wizarducks.com">
+  <meta property="twitter:url" content="https://wizarducks.com/">
+  <meta name="twitter:title" content="Wizarducks Puzzles">
+  <meta name="twitter:description" content="A cute and funny Indie Game!  Demo for PC, Linux, Raspberry Pi.">
+  <meta name="twitter:image" content="https://wizarducks.com/img/opengraph_PIC.webp">
+
+  <!-- Meta Tags Generated via https://www.opengraph.xyz -->
+  <!-- And thank god for it, i tried and it just would not work-->
+  <!-- still frustrating to make it work though-->
+
+
+    <meta name="keywords" content="indie game, linux game, PC game, demo, pixel art, 3D game, game maker, cute duck, magic, wizard, mage, duck, dog, doggo, puppy, puzzle, funny, comical">
+    <meta name="authorship" content="the wizarducks team">
+
+
+    <title>Wizarducks Puzzles</title>
+
+    <!-- link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"-->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Hello fellow html hacker, if you must know this is my first static website with Bulma and Sass ¯_(￣∇￣)_/¯ -->
+    <!-- You should probably be ashamed of yourself, I heard this kind of trespassing is illegal in some US states-->
+
+    <!-- So yeah, it doesn't take me effort to be this bad at it, i'm a natural -->
+    <!-- It was considered to be done on HUGO a while ago, but their documentation is terrible so I couldn't make a layout there -->
+    <!-- so if you're a relatively experienced programmer on the front end, welcome to cringe hell (⇀﹏↼) -->
+    <!-- and beware of grammar mistakes out of frustration -->
+
+    <!-- I'd like to make a toast for the sass syntax extension that sometimes auto-adds a ";" and gets me wondering for 10 minutes why
+        someone threw a wrench in my code right aftr i did a major, unrelated change
+    -->
+    
+
+    <link rel="stylesheet" href="ihate.css">
+
+    <link rel="help" href="duck.xml">
+</head>
+
+
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+          <div id="navMenu" class="navbar-menu">
+            <div class="navbar-end">
+              <div class="navbar-item">
+                <div class="buttons">
+                  <a class="button is-info" href="#discord" >Discord</a>
+                  <a class="button is-danger" href="#download-demo" >Download</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </nav>
+      
+
+<div class="hero-bg hero is-link is-fullheight-with-navbar is-primary has-background" id="hero-color">
+    <img alt="Wizarducks Cast!" class="hero-background is-transparent" src="img/wizarducks_hero_bg.webp" />
+    <div class="hero-body">
+      <div class="container">
+        <img src="img/wizarducks_logo.webp" alt="wizarducks logo" srcset="">
+        <h1 class="title stroke">Wizarducks Demo Released!</h1>
+        <h3 class="subtitle stroke">A game with magic, puzzles, and ducks</h3>
+      </div>
+    </div>
+  </div>
+
+
+<!-- You'll see me ranting a lot, but you have no idea how damn easy was for me to use a logo on a hero without wordpress plugins-->
+
+
+<!-- teasing details -->
+
+
+<section class="section triad-tease">
+
+    <div class=" container">
+
+        <div class ="columns content">
+
+            <!-- Could not use multiline to make stacking and reverse-row easier to control when needed -->
+
+            <div class="tease column is-4-tablet is-6-desktop ">
+                <h3 class="title is-2 section-title has-text-centered has-text-success">A Duck can cast Spells</h3>
+                <p class="has-text-centered">You are a duck, and a wizard! This game would be terrible at naming itself if the duckling couldn't use spells!</p>
+            </div>
+
+
+            <div class="tease column is-8-tablet is-6-desktop">
+                <video loop autoplay muted src="./vid/Wizarducks_Tease02.webm"></video>
+            </div>
+        </div>
+            <!----------------------------------------------------------------------->
+
+        <div class ="columns content">
+
+            <!-- Future me: In case you're wondering
+                 It is easier to hide a whole copy of a section for mobile than do some sorceries we used to do
+                No idea why no one suggests this when I was trying to figure how to reverse stack them.
+                ﾍ(=￣_￣)ﾉ
+            -->
+
+            <div class="is-hidden-mobile tease column is-8-tablet is-6-desktop">
+                <video loop autoplay muted src="./vid/Wizarducks_Tease03.webm"></video>
+            </div>
+
+
+            <div class="tease column is-4-tablet is-6-desktop">
+                <h3 class="title is-2 section-title has-text-centered has-text-warning	" >Spells can solve puzzles</h3>
+                <p class="has-text-centered">The objects that your magic interacts with, can either either bar your progress or aid you on moving forward.</p>
+            </div>
+
+            <div class="is-hidden-tablet tease column is-8-tablet is-6-desktop">
+                <!-- it is a simple spell but quite unbreakable -->
+                <video loop autoplay muted src="./vid/Wizarducks_Tease03.webm"></video>
+            </div>
+
+        </div>
+            <!----------------------------------------------------------------------->
+
+        <div class ="triad-tease columns content">
+
+
+            <div class="tease column is-4-tablet is-6-desktop">
+                <h3 class="title is-2 section-title has-text-centered has-text-danger">And you can play with the dog</h3>
+                    <!-- you can also pet him but that is not implemented yet-->
+                <p class="has-text-centered">We fiercely believe you should be able to play with your doggos. It took great effort to not make it the main mechanic of the game.</p>
+            </div>
+
+            <div class="column is-8-tablet is-6-desktop">
+                <video loop autoplay muted src="./vid/Wizarducks_Tease01.webm"></video>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- more details -->
+
+
+<section class="section main-content">
+
+    <div class="contaner">
+
+
+        <div class ="columns is-multiline content thumb-container">
+
+            <div class="column is-2-desktop">
+                <img class="image  duck-thumb" 
+                    src="img/another-adventure.webp" alt="adorable duck drawing">
+            </div>
+
+            <div class="column is-8-desktop has-text-centered">
+                
+
+                <p>It would mean the world to us if you played our demo. It is very short, and even you quitting halfway would inform us a lot.</p>
+                <p>Currently we're testing mechanics and if the game is working fine on the supported platforms.</p>
+                <p>We'd also love to hear what you liked, what you hated, and you'd like to see in the future.</p>
+            </div>
+
+
+            <div id="download-demo" class="download-part column is-12 has-text-centered">
+                <h2 class="main-attention title is-1 has-text-warning">Download Demo</h2>
+                <p>Our humble video game tests are available natively for both Windows and Linux!</p>
+                
+
+
+
+                <div class="buttons are-large is-centered">
+                    <a class="button is-danger" href="downloads/demo/latest/WizarducksPuzzlesWindows.zip" >Download for Windows</a>
+                    <a class="button is-success" href="downloads/demo/latest/WizarducksPuzzlesLinux.zip" >Download for Linux</a>
+                </div>
+
+                <p>...And here is a demo for the raspberry pi. We weren't aiming for that, but apparently we hit the mark by accident. So hey, why not?</p>
+
+                 <div class="buttons are-large is-centered">
+                    <a class="button is-info" href="downloads/demo/latest/WizarducksPuzzles-LinuxARM.zip" >Download for Raspberry Pi</a>
+                </div>
+            </div>
+
+            <div class="survey column is-3 is-offset-1 has-text-centered">
+                <h3 class="is-size-4 has-text-danger">Fill Out Our Survey</h3>
+
+                <p>You can fill out a brief form, and to write freely what your thoughts on the game were.</p>
+                <p>Any feedback will help us immensely!</p>
+                <a class="has-text-warning is-size-4 has-text-weight-bold" href="https://forms.gle/UyLUHZRmr5NVCD1X8"><p>Click here to Give us Feedback!</p></a>
+                <a href="https://forms.gle/UyLUHZRmr5NVCD1X8">
+                    <img src="./img/cast-_render_.webp" alt="discord image link">
+                </a>
+
+            </div>
+
+            <div class="join-us column is-4 is-offset-1 has-text-centered section is-multiline">
+
+                <h2 class="is-size-3 title has-text-success">or... Join our Discord!</h2> 
+                <div class="columns">
+                    
+
+                    <div id="discord" class="column is-half">
+                        <p class=>
+                            <a class="has-text-warning is-size-4 has-text-weight-bold" href="https://discord.gg/DYnF6TDctA">Click here Join</a>
+                        </p>
+
+                        <a href="https://discord.gg/DYnF6TDctA">
+                            <img src="./img/discordicon.png" alt="discord image link">
+                        </a>
+                    
+                    </div>
+
+                    <div class="column is-half has-text-success is-size-4 has-text-weight-bold">
+                        <p> Or use this QR code </p>
+                        <img src="./img/Wizarducks_Discord_QRcode.png" alt="QR code for Discord">
+
+                    </div>
+            </div>
+
+            </div>
+
+            <div class="column is-12 content is-small has-text-centered">
+
+                <p class="is-small footer-p">Or do both, I'm an announcement, not a cop</p>
+
+            </div>
+
+            <div class="column is-12 content has-text-centered">
+                <!-- somehow is-centered didn't work on is-6, so screw it-->
+
+                <h4 class="is-size-4 has-text-warning">Share with your friends!</h4>
+
+                <p> Seriously, we barely have any</p>
+                <p> Oh, and follow us on twitter  <a class="has-text-warning" href="https://twitter.com/wizarducks1">
+                    Twitter</a></p>
+
+
+                <!-- Not linking a whole library just to get one icon, and not bothering to make an image or svg right now.
+                <div class="twitter-icon">
+                    <a href="https://twitter.com/wizarducks1">
+                        <img src = "svg/twitter-svgrepo-com.svg" alt="Twitter"/>
+                    </a>
+                </div>
+                -->
+               
+
+            </div>
+
+            <div class="column is-12 has-text-centered">
+                
+                <h3 class="is-hidden">About the project</h3>
+
+            </div>
+
+            <div class="column is-12 has-text-left is-hidden">
+                
+                <h3>Artwork</h3>
+
+            </div>
+
+
+
+        </div> <!-- columns ends-->
+
+    </div> <!-- container ends-->
+
+</section> 
+
+
+<footer class="footer is-dark">
+    <div class="content has-text-centered">
+    </div>
+    <p class="footer-p">This piece of software belongs and is developed by Michael Peng and Alexandre Munin.</p>
+    <p class="footer-p">This video game is developed with Game Maker Studio 2 and other tools, check demo or with the developers for more information.</p>
+    <p class="footer-p has-text-right is-size-7">This is a static website that should not care about cookies.</p>
+    <p class="footer-p has-text-right is-size-7">Any complaints, bug reports and disdain over this website, please be fowarded to our twitter with a tutorial.</p>
+ </footer>
+
+</body>
+
+<!-- Archieved notes for your own amuzement:
+
+1. Why is Bulma by default making a botton pading on <body>?????????!!!!????
+
+    even 100vh is not solving it
+
+    Seriously, you have no idea how frustrating it is. It is like that since i just put the cdn, there was nothing else interfeering
+
+    (╬ Ò ‸ Ó)
+
+
+2. You'd think that at some point i'd learn to stop fighting for precedence on my own css, since it is the one thing
+    i never forgot about css, but here we are.
+
+3. I somehow managed to make an id for an object, address a specific css to that id, and sass does not think it is on
+    the page, so it never generates the css for it
+
+    I have no idea how bulma is overriding an id, so i'm fighting fire with fire and hardcoding 
+    the bulma classes to save time and it is working    ¯\_((╥﹏╥)_/¯
+
+4. And now even a very dumb div class="join-us column is-9 has-text-centered section is-multiline" is not
+    having their background color affected even if i put !important. THERE IS NOTHING AFFECTING IT
+    No code saying it should have another background or any inheritance rule.
+
+5. There is a reason why I don't do this for a living.
+
+6. Apparently, the reason why css is not being generated properly is because VScode's live server is watching sass and...
+    making some kind of cache? Instead of re-writing everything or detecting actual changes, not all gets generated.
+
+    I separated the set up variables and bulma files from the main css, and it still kept thinking there was a variable not declared.
+
+    Then i noticed it was NOT making a map or adding code to this new file that sets things up... at all. It was like it was cached information.
+
+    then i went to the most common variable... changed its properties... nothing changed.
+
+    then i commented its declaration out and... nothing changed. Wth is going on.
+
+7. I had to delete my local files to finally get one of the messages that would be relevant to the cascade of other error messages that had cold trails:
+"Error: Nothing may be indented beneath a variable declaration."
+
+    I swear this wasn't on the first pile of errors until i did that.
+
+    I am now back to a variable declaration problem, even though said variable is literally the 4th line of sass to run.
+
+    Apparently it is an importing problem.
+
+    * purposely writes a bad import *
+
+    Compiler: That is an import problem!
+
+    * writes import/use as instructed on official documentation *
+
+    Combiler stops bitching about import problem but doesn't use my variables from the partials.
+
+8. I give up. I'm adding all the variables to one single sass file. It solved the problem instantly.
+
+
+-->
+
+</html>

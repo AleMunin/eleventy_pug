@@ -1,0 +1,33 @@
+{% block head %}
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/css/style.css"> 
+
+
+    <link rel="help" href="duck.xml">
+
+
+    <title> {{ title }} </title>
+    <meta name="description" content="A cute and funny Indie Game!  Demo for PC, Linux, Raspberry Pi.">
+
+    {% block favicon %}{% endblock %}
+
+
+    {%include "_head/robots.njk"%}
+    {%block bots%} {% endblock %}
+
+    {% include "_head/meta/twitter_meta.njk"%}
+    {% block twitter_bullshit %}{% endblock %}
+
+    {% include "_head/meta/facebook_meta.njk"%}
+    {% block facebook_bullshit %}{% endblock %}
+
+    <!-- Hello, Mr. HTML hacker (⇀﹏↼) -->
+    <!-- You should probably be ashamed of yourself, I heard this kind of trespassing is illegal in some US states -->
+
+{% endblock %}
