@@ -14,7 +14,17 @@
     {%include "_navs/base_nav.njk" %}
     {% block main_nav %} {% endblock %}
 
-    <h1> {{ content | safe }}</h1>
+    <p> Loop without being inside .md </p>
+    <ul>
+        {%- for post in collections.post -%}
+        <li>{{ post.data.title }}</li>
+        {%- endfor -%}
+    </ul>
+
+    {{ content | safe }}
+
+
+  
 
     {%include "_foot/footer.njk"%}
     {% block footer %} {% endblock %}
