@@ -1,20 +1,6 @@
 {
-  "devDependencies": {
-    "@11ty/eleventy": "^2.0.1"
-  },
   "dependencies": {
-    "eleventy-sass": "^2.2.1"
-  },
-  "name": "11ty_tests",
-  "version": "0.1.0",
-  "main": ".eleventy.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "eleventy --serve",
-    "build": "eleventy"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": ""
+    "@11ty/eleventy": "^3.1.2",
+    "@11ty/eleventy-plugin-pug": "^1.0.0"
+  }
 }
