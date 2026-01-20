@@ -1,0 +1,20 @@
+---
+pagination:
+  data: collections.all_posts
+  size: 5
+  alias: list_posts
+---
+
+extends ./base_pagination.pug
+
+block content
+
+    !=content
+
+block collections
+
+    each post in pagination.items
+        article
+            h2= post.data.title
+            p= post.date.toISOString().slice(0,10)
+            != post.templateContent

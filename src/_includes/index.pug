@@ -1,10 +1,10 @@
-head
-    title !{title}
-body
+html
+    include head.pug
 
-    p I am pug
+    body
 
-    h1
-        This is the content without parsing the main thing
+        include nav.pug
 
-    p this is another paragraph
+        include main.pug
+
+        include footer.pug

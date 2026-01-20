@@ -1,0 +1,86 @@
+<html><head><title>Markdown</title><!-- Meta ---------------------------------------------------------><meta charset="utf-8"/><meta neme="viewport" content="width=device-width, initial-scale=1"/><meta name="color-scheme" content="dark"/><!-- CDNs ---------------------------------------------------------><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"/><!-- My JS ---------------------------------------------------------><script src="js.test.js"></script><!--My CSS ---------------------------------------------------------><link href=""/></head><body><nav><ul><li><a href="/">Home</a></li><li><a href="/pages/pugmentation/">Documentation</a></li><li><a href="/pages/markdown/">Markdown</a></li><li><a href="/posts/">Posts</a></li><li><a href="/about">About</a></li></ul></nav><main><p>I am pug</p><h1>This is the content without parsing the main thing</h1><p>this is another paragraph</p><h2>Here is the actual content of the page:</h2><section><p>Use this page to help you style your website's content.</p>
+<h1>This should be a header beginning content</h1>
+<p>This is a paragraph inside the markdown file</p>
+<p><em>this should be italic</em></p>
+<p><strong>this should be bold</strong></p>
+<p>This should be <em><strong>bold and italic</strong></em></p>
+<p><s>this should be risked</s></p>
+<p>==this should be highlighted==</p>
+<blockquote>
+<p>this should be a quote</p>
+</blockquote>
+<p>This paragraph <a href="https://www.11ty.dev">Has a link</a></p>
+<p>This is a link for a <a href="../post1">page in the same collection</a></p>
+<p>This is a link for a <a href="../../pages/page_a">page in a parallel collection</a></p>
+<p>This is a <code>single section of code</code> written within a paragraph.</p>
+<pre><code class="language-html">This is a block of code. If you have the right library the html syntax will be highlighted.
+
+Notice that eleventy formats the naming as a class for your convenience
+    &lt;article&gt;
+        &lt;p&gt; Tags are automatically escaped here &lt;/p&gt;
+    &lt;/article&gt;
+</code></pre>
+<p>It should work for most lengths:</p>
+<pre><code>
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣠⣤⣤⡶⠾⠿⠿⠛⠻⠿⠿⠶⢶⣤⣤⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣤⣶⠿⠛⠉⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠙⠻⢷⣶⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⢀⣤⡾⠟⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠙⠿⣶⣄⠀⠀⢀⣠⣶⡶⢶⣦⣄⡀⠀⠀
+⠀⠀⠀⠀⠀⠀⢀⣴⡿⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠻⢷⣤⣿⠏⠀⠀⠀⠈⠙⢿⣦⠀
+⠀⠀⠀⠀⠀⣴⡿⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣀⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠹⣿⣄⠀⣠⡶⢶⣄⠀⢹⣇
+⠀⠀⠀⢀⣾⠟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣶⠿⠛⠉⠙⠛⢷⣦⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢿⣦⠛⠀⠀⣿⠀⠈⣿
+⠀⠀⢠⣿⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⡿⠃⠀⠀⠀⠀⠀⠀⠈⠻⣷⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢻⣧⣀⣼⠟⠀⢸⡟
+⠀⢠⣾⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⡇⠁⠀⠀⠀⠀⠀⠀⠀⠀⠈⢿⣆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢻⣯⠁⠀⣠⣿⠁
+⠀⣼⣿⣿⠇⠀⠀⠀⠀⠀⠀⠀⣿⣿⣿⣿⠂⠀⠀⠀⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢻⣆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⣿⣶⡾⠟⠁⠀
+⢠⣿⣄⡀⠀⠀⠀⠀⠀⠀⠀⢀⣠⣤⡤⢤⣤⣄⠀⠀⢹⣧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⣿⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠸⣷⠀⠀⠀⠀
+⢸⣿⡭⣷⡀⠀⠀⠀⠀⢀⣶⢟⣭⣴⣶⣶⣬⣝⢷⣄⠀⢿⣧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⡆⠀⠀⠀
+⢸⣿⣿⢸⡇⠀⠀⠀⠀⣿⢃⣾⣿⣿⣿⣿⣿⣿⣆⢻⡆⠀⠻⣷⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⣾⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⡇⠀⠀⠀
+⢸⣿⣿⢸⡇⠀⠀⠀⠀⣿⢸⣿⣿⣿⣿⣿⣿⣿⣿⢸⡷⠀⠀⠉⠻⣿⣦⣀⡀⠄⠀⠀⣠⣾⠟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⡇⠀⠀⠀
+⢸⣿⣿⣼⣷⣶⣶⣶⣾⣿⡄⢻⣿⣿⣿⣿⣿⣿⡟⣸⡇⠀⠀⠀⠀⠀⠉⠛⠻⠿⠿⠟⠛⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⠃⠀⠀⠀
+⢻⣷⣾⣿⣗⠙⣿⠋⠀⠈⠻⣦⣍⣛⣛⣛⣛⣩⣴⠟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣿⠀⠀⠀⠀
+⠸⣷⣿⠳⠿⣸⣿⠀⠀⠀⠀⠈⠻⣿⡛⠛⠛⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣸⡇⠀⠀⠀⠀
+⠀⣿⡏⠀⣰⣿⢿⡄⠀⠀⠀⠀⠀⠘⣿⡆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣿⠁⠀⠀⠀⠀
+⠀⣿⡇⣂⣿⡘⢘⣿⡄⠀⠀⠀⢀⢠⣜⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣾⢾⠃⠀⠀⠀⠀⠀⣸⡏⠀⠀⠀⠀⠀
+⠀⠹⣿⣿⣿⡟⡛⠛⣿⣦⣀⣀⣈⣻⣿⠏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⡿⠃⠁⠀⠀⠀⠀⠀⠀⣰⡿⠀⠀⠀⠀⠀⠀
+⠀⠀⠹⣷⡙⠿⠷⣦⣬⣿⠟⠛⠛⠋⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⠁⠀⠀⠀⠀⠀⠀⠀⣰⡿⠁⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠘⠿⣦⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢿⣦⡀⠀⠀⠀⠀⠀⣼⡟⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠈⠛⠿⣶⣤⣀⣀⠀⠀⠀⠀⠀⠀⣶⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⣻⣿⡆⠀⠀⠈⣿⡆⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⢹⣿⡙⢻⡿⢷⣶⣶⣤⣄⣿⣇⠀⠀⢠⣶⠀⠀⠀⠀⣀⣀⣀⣤⣶⡾⣿⠋⠹⣷⡀⠀⢠⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠿⠿⠃⠀⠀⠀⠈⠉⠙⣿⡄⠀⣸⡟⠛⠛⠛⠛⠛⠛⠉⠙⠿⠾⠋⠀⠀⢻⣧⠀⣸⠏⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⢿⣴⡿⠀⠂⠀⠀⠀⠐⠠⠠⠄⠯⠋⠁⠐⠄⠀⠙⠛⠛⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+</code></pre>
+<h2>Lists</h2>
+<ol>
+<li>Numerical lists don't naturaly break into sublists</li>
+<li>It is unfortunate.</li>
+</ol>
+<ul>
+<li>You can perform those lists too</li>
+<li>Item 2</li>
+</ul>
+<h2>Linebreak:</h2>
+<hr>
+<h2>Table</h2>
+<h1>Image</h1>
+<table>
+<thead>
+<tr>
+<th>This</th>
+<th>is</th>
+<th>a</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>table</td>
+<td>in</td>
+<td>markdown</td>
+</tr>
+</tbody>
+</table>
+<h1>Header 1</h1>
+<h2>Header 2</h2>
+<h3>Header 3 <em>with italic</em></h3>
+<h4>Header 4 <s>risked</s></h4>
+<h5>Header 5 <strong>bold</strong></h5>
+<h6><a href="https://www.11ty.dev">Header 6</a></h6>
+</section></main></body></html>

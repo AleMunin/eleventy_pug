@@ -1,0 +1,44 @@
+<html><head><title>pugmentation</title><!-- Meta ---------------------------------------------------------><meta charset="utf-8"/><meta neme="viewport" content="width=device-width, initial-scale=1"/><meta name="color-scheme" content="dark"/><!-- CDNs ---------------------------------------------------------><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"/><!-- My JS ---------------------------------------------------------><script src="js.test.js"></script><!--My CSS ---------------------------------------------------------><link href=""/></head><body><nav><ul><li><a href="/">Home</a></li><li><a href="/pages/pugmentation/">Documentation</a></li><li><a href="/pages/markdown/">Markdown</a></li><li><a href="/posts/">Posts</a></li><li><a href="/about">About</a></li></ul></nav><main><p>I am pug</p><h1>This is the content without parsing the main thing</h1><p>this is another paragraph</p><h2>Here is the actual content of the page:</h2><section><h1>Eleventy</h1>
+<p>Source folder = src</p>
+<h1>Pug</h1>
+<p>You can learn more about <a href="https://pugjs.org/api/getting-started.html">Pug</a> on its official website. Keep in mind that the npm of pug on this project is not installed directly. We're using the eleventy official plugin.</p>
+<p>Content display on pug has a different syntax than the regular Eleventy tutorials:</p>
+<p><code>!=content</code></p>
+<h1>Directories</h1>
+<p>They should look something like that:</p>
+<pre><code>├── _site
+│   └── pages
+│       ├── about
+│       ├── markdown
+│       └── pugmentation
+└── src
+    ├── css
+    ├── _includes
+    ├── js
+    ├── media
+    ├── _mixins
+    ├── pages
+    ├── pagination
+    ├── posts
+    └── _sass
+</code></pre>
+<p><code>_site</code> is the output to be published. You can change that but I didn't to align with some tutorials if you need to. If you're having some kind of problem with eleventy I recommend just deleting everything inside and it will build everything from scratch.</p>
+<p><code>src</code> is how the website is built. Directories or files that have a <code>_</code> will not pass through the build.</p>
+<p><code>_includes</code> is where templates are stored.</p>
+<p>Directories like <code>pages</code> or <code>posts</code> are just to organize the website. If a <em>page does not have a permalink, it will follow the structure it is stored in</em>.</p>
+<p>Directories are empty pages by default, but you can create a file with the directory name for an actual page, which can be helpful to add collection loops. I recommend making a layout just for this kind of behavior.</p>
+<h1>CDN</h1>
+<p>The default styling for this template is the basic of <a href="https://picocss.com/">PicoCSS</a>, which is incredibly minimalistic.</p>
+<p>You can use whatever you want by just removing it.</p>
+<p>If you are undecided of what to use, my recommendations for mor complex stuff are either <a href="https://www.beercss.com/">BeerCSS</a> or <a href="https://bulma.io/">Bulma</a>, both are great at avoiding any Javascript on their styling.</p>
+<h1>Sass</h1>
+<p>Unlike Pug, sass is installed individually.</p>
+<p>On Eleventy 2, I used <a href="https://github.com/kentaroi/eleventy-sass">Eleventy-sass</a> which would build continuously while using the <code>--serve</code> command for eleventy. It is more integrated, but I don't feel like using the beta features for eleventy 3. Still a very good option if you're into it.</p>
+<p>For converting your stuff the command is:</p>
+<p><code>npx sass --watch src/_sass:src/css</code></p>
+<h1>Media</h1>
+<p>This project does not convert .png to .webp when building the site. At least for now.</p>
+<h1>Markdown</h1>
+<p>This project on its own will not convert wikilinks, unfortunately. I do plan to fork it and deal with something Obsidian-specific, though.</p>
+<p>If you're stying your website, you might want to do while checking <a href="./../markdown">this page</a></p>
+</section></main></body></html>
