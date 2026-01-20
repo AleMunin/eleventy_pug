@@ -91,8 +91,6 @@ It should work for most lengths:
 
 ## Table
 
-# Image
-
 
 
 | This  | is  | a        |
@@ -107,3 +105,12 @@ It should work for most lengths:
 ##### Header 5 **bold**
 ###### [Header 6](https://www.11ty.dev)
 
+
+
+# Image
+
+![This is a broken image link, the alt text still shows up](../media/wizarducks.png)
+
+Picture from [wizarducks](https://wizarducks.com/)
+
+![This is an image, this alt text will only be shown when asked](../../media/wizarducks.png)
