@@ -24,6 +24,10 @@ Because I absolutely detest CSS's little quirks.
 
 It is just my charm.
 
+# Special Thanks
+
+11ty Rocks and Aankhen from the extremely friendly 11ty discord.
+
 
 
 PS: this has a permalink just for you to see the difference. The file itself is under the `/pages/` directory

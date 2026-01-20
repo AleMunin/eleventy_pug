@@ -1,9 +1,12 @@
 ---
 pagination:
   data: collections.all_posts
-  size: 5
+  size: 1
   alias: list_posts
 ---
+
+//- The "size 1" is just for testing the menu. It can handle any quantity of posts in one page you prefer.
+
 
 extends ./base_pagination.pug
 
@@ -18,3 +21,12 @@ block collections
             h2= post.data.title
             p= post.date.toISOString().slice(0,10)
             != post.templateContent
+
+block paginations
+    include _mixins/pagination_mixin
+
+    nav
+        +pag_previous('Previous')(class='this_class_is_optional')
+        +pag_numbers
+
+        +pag_next("Next")

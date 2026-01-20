@@ -1,0 +1,16 @@
+<html><head><title>Collection page</title><!-- Meta ---------------------------------------------------------><meta charset="utf-8"/><meta neme="viewport" content="width=device-width, initial-scale=1"/><meta name="color-scheme" content="dark"/><!-- CDNs ---------------------------------------------------------><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"/><!-- My JS ---------------------------------------------------------><script src="js.test.js"></script><!--My CSS ---------------------------------------------------------><link href=""/></head><body><nav><ul><li><a href="/">Home</a></li><li><a href="/pages/pugmentation/">Documentation</a></li><li><a href="/pages/markdown/">Markdown</a></li><li><a href="/posts/">Posts</a></li><li><a href="/about">About</a></li></ul></nav><h1>This is a page for the collection.</h1>
+<p>Note that the content remains while the pagination will change bellow. The <code>.md</code> file shares the name with the directory it is hosted in, so they share a path.</p>
+<p>For example, <code>pages</code>directory lacks one, and it will result on a broken link if <a href="/pages/">you try to access it</a></p>
+<h2>Content Removal</h2>
+<p>If you don't want its content (written in 'posts.pug'), just remove the content block. The file it extends will not crash.</p>
+<p>Alternatively, you can create a base that does not asks for the &quot;content&quot; block</p>
+<h2>Types of Usage</h2>
+<p>This kind of page is useful to make paginations, summaries, and anything related to properly hosting the other pages within a collection.</p>
+<p>All you need to do is give the same name for the markdown file as the collection.</p>
+<hr>
+<p>You might also want to preferably use another layout on the template, so you can loop through this collection or overall set them apart.</p>
+<hr>
+<p>This page WILL show up o the collection loops if not made some kind of exception.</p>
+<article><h2>Second Post</h2><p>2026-01-20</p><p>I may add more collection examples in the future, with tags, author, just to make things easier to copy and paste.</p>
+<p>Likewise, I might make a properly formatted template for posts so their title is clickable, so on.</p>
+</article><nav><a class="this_class_is_optional" href="/posts/">Previous</a><ul><li><a href="/posts/">1</a></li><li><a href="/posts/1/">2</a></li></ul></nav></body></html>
